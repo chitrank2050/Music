@@ -67,7 +67,7 @@ export default {
       this.isPlaying = false;
     },
     next() {
-      this.index = this.index == this.songs.length ? 0 : this.index + 1;
+      this.index = this.index == this.songs.length - 1 ? 0 : this.index + 1;
       this.current = this.songs[this.index];
       this.play(this.current);
     },
